@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.App {
+	width: 100%;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #4EC73B;
+	font-weight: 200;
+	font-size: 3em;
+}
+
+.leveler {
+	width: 100%;
+	height: 50px;
+	background: #CFCFCF;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.leveler::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: calc(50% - 30px);
+	height: 100%;
+	width: 2px;
+	background: #000;
+	z-index: 5;
+}
+
+.leveler::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: calc(50% - 30px);
+	height: 100%;
+	width: 2px;
+	background: #000;
+	z-index: 5;
+}
+
+.ball{
+	width: 50px;
+	height: 50px;
+	background: #65EC6D;
+	border-radius: 50%;
+	background: radial-gradient(circle at 17.50px 17.5px, #65EC6D, #39843E);
+}
